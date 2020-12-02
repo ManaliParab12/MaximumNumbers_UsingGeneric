@@ -46,4 +46,25 @@ public class NumberTest {
         Float expectedMaximumNumber = 40.44f;
         Assert.assertEquals(expectedMaximumNumber, actualMaximumFloat);
     }
+
+    @Test
+    public void givenMaximumString_whenAtFirstPosition_shouldReturnSameValue(){
+        String actualMaximumString = maximumnumber.checkMaximumString("Peach", "Banana", "Apple");
+        String expectedMaximumNumber = "Peach";
+        Assert.assertEquals(expectedMaximumNumber, actualMaximumString);
+    }
+
+    @Test
+    public void givenMaximumIString_whenAtSecondPosition_shouldReturnSameValue(){
+        String actualMaximumString = maximumnumber.checkMaximumString( "Apple", "Peach", "Banana");
+        String expectedMaximumNumber = "Peach";
+        Assert.assertEquals(expectedMaximumNumber, actualMaximumString);
+    }
+
+    @Test
+    public void givenMaximumString_whenAtThirdPosition_shouldReturnSameValue(){
+        String actualMaximumString = maximumnumber.checkMaximumString("Banana", "Apple", "Peach" );
+        String expectedMaximumNumber = "Peach";
+        Assert.assertEquals(expectedMaximumNumber, actualMaximumString);
+    }
 }

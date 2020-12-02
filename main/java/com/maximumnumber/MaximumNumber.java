@@ -32,4 +32,17 @@ public class MaximumNumber {
         return maximumNumber;
     }
 
+    public String checkMaximumString(String value1, String value2, String value3) {
+        String maximumValue = value1;
+
+        if (value2.compareTo(maximumValue) > 0) {
+            maximumValue = value2;
+        }
+        if(value3.compareTo(maximumValue) > 0) {
+            maximumValue = value3;
+        }
+        System.out.println("Maximum Value is : " +maximumValue );
+        return maximumValue;
+    }
+
 }
