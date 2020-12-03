@@ -21,8 +21,23 @@ public class MaximumNumber <T extends Comparable>  {
         return maximumValue;
     }
 
+    public static<T extends Comparable> T printMaximum(T[] value, T maximum) {
+        for( T values : value) {
+            System.out.println(values);
+        }
+        System.out.println("Maximum" +maximum);
+        return maximum;
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to Test Maximum Number using Generic");
-
+        Integer[] intArr = {23, 15, 67, 2};
+        Float[] floatArr = {2.6f, 45.2f, 9.54f, 90.2f};
+        String[] stringArr = {"Apple", "Orange", "Banana", "Peach"};
+        MaximumNumber.checkMaximumValue(intArr);
+        MaximumNumber.checkMaximumValue(floatArr);
+        MaximumNumber.checkMaximumValue(stringArr);
+        new MaximumNumber(floatArr);
+        new MaximumNumber(stringArr);
     }
 }
