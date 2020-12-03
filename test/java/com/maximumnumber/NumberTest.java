@@ -76,4 +76,5 @@ public class NumberTest {
         String expectedMaximumNumber = "Peach";
         Assert.assertEquals(expectedMaximumNumber, actualMaximumString);
     }
-}
+
+}}
